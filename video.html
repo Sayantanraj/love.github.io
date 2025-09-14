@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Centered iFrame</title>
+  <style>
+    *{
+         background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
+    body {
+      display: flex;
+      justify-content: center;  /* Center horizontally */
+      align-items: center;      /* Center vertically */
+      height: 100vh;            /* Full viewport height */
+      margin: 0;
+     
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 80%;      /* Adjust width */
+      max-width: 900px;
+      aspect-ratio: 16 / 9;  /* Keeps a fixed aspect ratio */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .a{
+        margin-top: 60%;
+        position: relative;
+        right: 50%;
+    }
+  </style>
+</head>
+<br>
+  <div class="iframe-container">
+    <iframe src="https://www.youtube.com/embed/aqs6HBXhzbc?si=L9PlAipQlYVXr23g" 
+            allowfullscreen>
+    </iframe>
+  </div></br > <div class="a">
+  <a href="index.html" style="text-decoration: none;     background: #ff165d;
+      color: #fff;">BACK</a></div>
+</body>
+</html>
